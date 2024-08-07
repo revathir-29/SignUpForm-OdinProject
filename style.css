@@ -1,0 +1,139 @@
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+}
+#side-img{
+    width: 35%;
+    height: 100%;
+    background-image: url("./image.avif");
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-size: 0.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#side-img #logo{
+    width: 100%;
+    height: 120px;
+    background-color: rgba(16, 15, 15, 0.744);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    gap: 20px;
+}
+#logo img{
+    height: 80%;
+}
+#content{
+    width: 65%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    align-items: flex-start;
+    background-color:rgb(251, 251, 251);
+}
+.head-text{
+    font-size: 1rem;
+    font-weight:bold;
+    max-width: 650px;
+    margin-left: 50px;
+    
+}
+
+form{
+    width: 100%;
+    background-color: white;
+    padding-left:50px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:5px;
+    box-shadow: 1px 5px 10px lightgray;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: rgb(72, 70, 70);
+    
+}
+form > div{
+    display: flex;
+    gap:50px;
+}
+form > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    width: 200px;
+    height:25px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: .8rem;
+    
+}
+input:focus{
+    box-shadow: 2px 4px 10px lightgray;
+}
+input[type="text"]:focus{
+    outline-color: rgb(82, 149, 251);
+}
+input[type="password"]:focus{
+    outline-color: rgb(251, 82, 82);
+}
+button{
+    color: white;
+    margin-left: 50px;
+    background-color: #596D48;
+    padding: 8px 30px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px lightgray;
+    margin-bottom: 15px;
+}
+button + p{
+    margin-left: 50px;
+    font-size: 1rem;
+}
+span{
+    color: #596D48;
+    font-weight: 600;
+    cursor: pointer;
+}
+.password-alert{
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 0px;
+    display: none;
+}
+#p3{
+    margin-bottom: 35px;
+    margin-top: 0px;
+    font-size: 1rem;
+}

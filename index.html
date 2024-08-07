@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="side-img">
+            <div id="logo">
+                <img src="./odin-lined.png" alt="odin-logo">
+                <h1>ODIN</h1>
+            </div>
+            <p id="foot">Photo by <span style="text-decoration: underline; color: white; font-weight: lighter;">Halie West</span> on <span style="text-decoration: underline; color: white; font-weight: lighter;"> Unsplash</span></p>
+        </div>
+        <div id="content">
+            <div class="head-text">
+                <p>This is not a online service! You know you need something<br>
+                    like this in your life to help you realize your deepest dreams.
+                    <br>
+                    Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+
+            <form action="#">
+                <p id="p3">Let's do this!</p>
+                <div>
+                    <div class="first-name">
+                        <label for="first">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first">
+                    </div>
+                    <div class="last-name">
+                        <label for="last">LAST NAME</label>
+                        <input type="text" name="last-name" id="last">        
+                    </div>
+                </div>
+
+                <div>
+                    <div class="email">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" name="email" id="mail">
+                    </div>
+                    <div class="phone">
+                        <label for="phoneNum">PHONE NUMBER</label>
+                        <input type="phone" name="phonenumber" id="phoneNum">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="password">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" name="password" id="pass">
+                        <p class="password-alert">*passwords do not match</p>
+                    </div>
+                    <div class="confirm">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm">
+                    </div>
+                </div>
+            </form>
+            <div class="button"><button>Create Account</button>
+                <p>Already have an account? <span>Log in</span></p></div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
